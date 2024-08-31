@@ -1,5 +1,5 @@
 # Menggunakan Node.js base image
-FROM node:20.14.0
+FROM node:14
 
 # Set working directory
 WORKDIR /app
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose port aplikasi
-EXPOSE 3000
+EXPOSE 5000
 
 # Command untuk menjalankan aplikasi
 CMD ["node", "./src/server.js"]
